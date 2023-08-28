@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+//definindo variáveis
 int a, b, c;
 int media;
 int maior1, maior2;
@@ -10,7 +11,7 @@ int main(){
     scanf("%d", &b);
     scanf("%d", &c);
 
-    
+    //fazendo a relação de ser maior ou menor
     if(a >= c && b >= c){
         maior1 = a;
         maior2 = b;
@@ -22,6 +23,7 @@ int main(){
         maior2 = c;
     }
     
+    //a conta de fato
     media = (maior1 + maior2)/2;
     
     printf("O resultado dessa média é: %d", media);
