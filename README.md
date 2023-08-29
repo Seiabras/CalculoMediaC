@@ -3,6 +3,7 @@ Essas são as atividades 1 e 2 de Prog1, do lab2, tem a três também, mas eu vo
 
 -----------------------------------------------------------------------------------------------------------------
 *Início da lista 2, lab2*
+
 //Atividade 1\\\\
 Escreva um programa que receba três notas (avaliações de provas) e retorne a média
 aritmética entre as duas maiores. Teste seu programa com diferentes valores de
@@ -30,6 +31,8 @@ Escreva um programa que leia as coordenadas de um ponto (x, y) no plano
 cartesiano e determine em qual quadrante ele está. Caso o ponto esteja sobre um
 dos eixos, informe em qual eixo ele se encontra.
 
-Fim da lista 2, lab2
+*Fim da lista 2, lab2*
+
 -----------------------------------------------------------------------------------------
+Outra coisa
 
