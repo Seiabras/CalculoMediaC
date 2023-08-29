@@ -10,34 +10,13 @@ entrada.
 Uma curiosa propriedade matemática que um número inteiro N de 3 dígitos pode vir
 a possuir é a seguinte:
 
-N = centenas
-3
-+ dezenas
-3
-+ unidades
-3
+N = centenas^3+ dezenas^3+ unidades^3
 
-Por exemplo:
-371 = 3
-3
-+ 7
-3
-+ 1
-3
+Por exemplo: 371 = 3^3+ 7^3+ 1^3
 
-153 = 1
-3
-+ 5
-3
-+ 3
-3
+153 = 1^3+ 5^3+ 3^3
 
-407 = 4
-3
-+ 0
-3
-+ 7
-3
+407 = 4^3+ 0^3+ 7^3
 
 Escreva um programa que receba um número inteiro N de 3 dígitos e informe se
 esse número satisfaz a relação acima. Considere apenas valores positivos. Se o total
