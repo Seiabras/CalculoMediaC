@@ -36,99 +36,17 @@ dos eixos, informe em qual eixo ele se encontra.
 -----------------------------------------------------------------------------------------
 *Início da lista 3, lab3*
 
-Atividade 1 - Leia com calma esta página e execute a tarefa da página seguinte.
-Em aula vimos a estrutura básica de um comando switch-case, ilustrada no exemplo
-abaixo:
-int main() {
-int voto;
-printf("Digite o seu candidato.\n");
-scanf ("%d", &voto);
-switch(voto) {
-case 15:
-printf("Candidato(a) A.\n");
-break;
-case 29:
-printf("Candidato(a) B.\n");
-break;
-case 40:
-printf("Candidato(a) C.\n");
-break;
-default:
-printf("Voto anulado.\n");
-}
-return 0;
-}
-Poderíamos ter utilizado “constantes”* para melhor legibilidade:
-#define PARTIDO_X 15
-#define PARTIDO_Y 29
-#define PARTIDO_Z 40
-int main() {
-int voto;
-printf("Digite o seu candidato.\n");
-scanf("%d", &voto);
-switch (voto) {
-case PARTIDO_X:
-printf("Candidato(a) A.\n");
-break;
-case PARTIDO_Y:
-printf("Candidato(a) B.\n");
-break;
-case PARTIDO_Z:
-printf("Candidato(a) C.\n");
-break;
-default:
-printf("Voto anulado.\n");
-}
-return 0;
-}
-*Na cláusula case não se admite o uso de constantes verdadeiras (isto é, variáveis com o
-modificador de acesso const), pois em C toda cláusula case requer um literal.
-
 Tarefa: Vimos que é possível avaliar qualquer expressão logicamente interpretável (ou
 seja, expressões que resultam em um número inteiro). Por exemplo, um tipo char como
 argumento do switch() gera uma expressão válida, pois será interpretado seu código ASCII
-(um número inteiro):
-int main() {
-char simbolo;
-printf("Digite um caractere.\n");
-scanf ("%c", &simbolo);
-switch(simbolo) {
-case '!':
-printf("Exclamacao.\n");
-break;
-case '?':
-printf("Interrogacao.\n");
-break;
-case '@':
-printf("O proximo simbolo eh %c.\n", simbolo + 1);
-default:
-printf("Simbolo qualquer.\n");
-}
-return 0;
-}
-→ Rode o código acima e digite o símbolo '@'. Por que foi exibida a letra A e a
+(um número inteiro)
+→ Rode o código e digite o símbolo '@'. Por que foi exibida a letra A e a
 mensagem padrão?
 → Corrija o exemplo para que a mensagem padrão não seja exibida nesse caso.
 
 Atividade 2
 Vimos em aula o uso básico do operador ternário
-
-(<expr avaliada>) ? <expr se V> : <expr se F>
-
-ilustrado no exemplo abaixo:
-int main(void) {
-int x, y;
-int maior;
-printf("Digite dois inteiros:\n”);
-scanf("%d %d", &x, &y);
-maior = (x > y) ? x : y;
-printf("O maior valor eh: %d", maior);
-return 0;
-}
-Operadores ternários podem ser aninhados. Por exemplo, na estrutura mais acima,
-podemos substituir <expr se V> por:
-(<expr avaliada>) ? (<expr 2>) ? <expr se V> : <expr se F> : <expr se F>
-O mesmo poderia ser feito com a <expr se F>.
+Operadores ternários podem ser aninhados.
 → Use o comando ternário para implementar as seguintes operações em C:
 (a) receber um inteiro e retornar -1 se ele for par e 1 se ele for ímpar;
 (b) receber um racional e retornar 1 se ele for positivo e 0 caso contrário;
@@ -151,32 +69,7 @@ destas com um valor constante igual a 5, que representa o limiar de aprovação.
 média seja maior ou igual ao limiar, informar “Aprovado”. Imprimir “Reprovado” caso
 contrário. Para a declaração da constante, utilize o modificador const em uma variável.
 
-Atividade 5: Substituir o comando de seleção if-else pelo switch-case no trecho de código
-abaixo. Teste o seu programa e verifique a validade das operações.
-#include <stdio.h>
-int main() {
-float a, b;
-char operador;
-printf("Digite uma operacao aritmetica entre dois numeros a e b, no formato \"a
-<operacao> b\":\n");
-scanf("%f %c %f", &a, &operador, &b);
-if (operador == '+') {
-printf("%.2f\n", a + b);
-}
-else if (operador == '-') {
-printf("%.2f\n", a - b);
-}
-else if (operador == '/') {
-printf("%.2f\n", a / b);
-}
-else if (operador == '*') {
-printf("%.2f\n", a * b);
-}
-else {
-puts("Operador nao definido.");
-}
-return 0;
-}
+Atividade 5: Substituir o comando de seleção if-else pelo switch-case no trecho de código. Teste o seu programa e verifique a validade das operações.
 
 *Fim da lista 3, lab3*
 
