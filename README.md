@@ -35,6 +35,7 @@ dos eixos, informe em qual eixo ele se encontra.
 
 -----------------------------------------------------------------------------------------
 *Início da lista 3, lab3*
+
 Atividade 1 - Leia com calma esta página e execute a tarefa da página seguinte.
 Em aula vimos a estrutura básica de um comando switch-case, ilustrada no exemplo
 abaixo:
